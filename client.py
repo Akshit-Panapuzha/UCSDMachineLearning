@@ -2,9 +2,9 @@ import requests
 
 def send_data_to_server(data):
     header = {"Content-Type": "application/json"}
-    url = 'http://34.210.58.76:5000/api'  # Replace YOUR_EC2_PUBLIC_IP with your EC2 instance's public IP address.
+    url = 'http://35.167.2.31:5000/api'
     response = requests.post(url, json=data, headers=header)
-    
+
     if response.status_code == 200:
         result = response.json()
         return result
@@ -14,7 +14,27 @@ def send_data_to_server(data):
 
 if __name__ == '__main__':
     # Replace this example data with your actual data that you want to send to the server.
-    
-    example_data = {"input_1": 42, "input_2": 3.14}
+    print("example_data = \n{'Low': 20.899999618530273,\n'Open': 20.899999618530273,\n'Adjusted Close': 24.5,\n'High': 21.75,\n'Close': 21.5,\n#}")
+    low = input("low: ")
+    open = input("open: ")
+    adjclose = input("adjusted close: ")
+    high = input("high: ")
+    close = input("close: ")
+
+    example_data = {
+        "Low": low,
+        "Open": open,
+        "Adjusted Close": adjclose,
+        "High": high,
+        "Close": close,
+    }
+
+    #example_data = {
+    #    "Low": 20.899999618530273,
+    #    "Open": 20.899999618530273,
+    #    "Adjusted Close": 24.5,
+    #    "High": 21.75,
+    #    "Close": 21.5,
+    #}
     result_from_server = send_data_to_server(example_data)
-    print("Result from server:", result_from_server)
+    print("Days From the Start to Get to the Listed Values:", result_from_server)
