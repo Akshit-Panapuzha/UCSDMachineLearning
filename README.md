@@ -28,7 +28,7 @@ To experience the Stock Price Prediction API, proceed through these steps:
 
 2. Ready your historical stock data in CSV format, making sure to include essential columns such as 'Date', 'Low', 'Open', 'High', 'Close', and 'Adjusted Close'.
 
-3. Train the predictive model by executing the `train_model.py` script. This process will generate the 'stock_price_prediction_model.pkl' file, encapsulating the trained model.
+3. Train the predictive model by executing the `trainModel.py` script. This process will generate the 'stock_price_prediction_model.pkl' file, encapsulating the trained model.
 
 4. Activate the API server by running the `server.py` script. This deployment allows you to issue POST requests with input stock data.
 
@@ -47,4 +47,4 @@ By Akshit Panapuzha
 
 ---
 
-**Note**: Be sure to execute the `train_model.py` script to generate the 'stock_price_prediction_model.pkl' file before utilizing the API for predictions.
+**Note**: Be sure to execute the `trainModel.py` script to generate the 'stock_price_prediction_model.pkl' file before utilizing the API for predictions.
