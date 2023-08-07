@@ -1,48 +1,50 @@
-# Stock Price Prediction API for UCSD Machine Learning Bootcamp
+# Stock Price Prediction API
 
-Welcome to the Stock Price Prediction API repository. This project demonstrates a robust and sophisticated approach to predicting stock prices based on historical data. The API utilizes advanced machine learning techniques and a well-structured pipeline to provide accurate predictions of stock price trends.
+Welcome to the Stock Price Prediction API repository. This project showcases a sophisticated approach to predicting stock prices based on historical data, leveraging advanced machine learning techniques and a well-structured pipeline to provide accurate predictions of stock price trends.
 
 ## Overview
 
-This project is the culmination of an extensive machine learning journey, combining skills honed during a comprehensive machine learning bootcamp with a master's-level understanding of predictive modeling. The API leverages the power of scikit-learn and Gradient Boosting Regression to create a robust predictive model for stock price movement.
+This project represents the culmination of a comprehensive machine learning journey, combining skills honed during a rigorous machine learning bootcamp with a master's-level understanding of predictive modeling. The API harnesses the capabilities of scikit-learn and Gradient Boosting Regression to craft a robust predictive model for stock price movement.
 
 ## Features
 
-- **Advanced Machine Learning Pipeline**: The heart of this API lies in its intricate machine learning pipeline. This pipeline encompasses preprocessing, dimensionality reduction, and Gradient Boosting Regression to create a high-performance predictive model.
+- **Advanced Machine Learning Pipeline**: At the core of this API lies a complex machine learning pipeline. This pipeline encompasses preprocessing, dimensionality reduction, and Gradient Boosting Regression to craft a high-performance predictive model.
 
-- **Feature Engineering**: The model is trained on key features including 'Low', 'Open', 'High', 'Close', and 'Adjusted Close', capturing nuanced patterns in stock price data.
+- **Feature Engineering**: The model is trained on pivotal features including 'Low', 'Open', 'High', 'Close', and 'Adjusted Close', enabling the capture of nuanced patterns in stock price data.
 
-- **Efficient Preprocessing**: A custom preprocessing pipeline ensures that data is well-scaled and transformed, setting the stage for accurate predictions.
+- **Efficient Preprocessing**: A meticulously designed preprocessing pipeline ensures meticulous data scaling and transformation, setting the foundation for accurate predictions.
 
-- **Dimensionality Reduction**: Principal Component Analysis (PCA) is employed to reduce feature dimensionality, optimizing model performance and mitigating overfitting.
+- **Dimensionality Reduction**: The integration of Principal Component Analysis (PCA) facilitates feature dimensionality reduction, optimizing model performance and curbing overfitting.
 
-- **Predictive Power**: The Gradient Boosting Regressor, known for its ability to capture complex relationships, forms the core of the predictive model, ensuring accurate and meaningful predictions.
+- **Predictive Power**: The central predictive model utilizes Gradient Boosting Regressor, recognized for its aptitude in capturing intricate relationships, ensuring precise and meaningful predictions.
 
-- **Calculation of Predicted Date**: Rather than predicting exact stock prices, the API predicts the number of days from the start date. This unique approach adds practicality to predictions and enables informed decision-making.
+- **Calculation of Predicted Date**: Differing from conventional approaches, the API predicts the number of days from the start date. This innovative strategy enhances practicality and empowers well-informed decision-making.
 
 ## Getting Started
 
-To use the Stock Price Prediction API, follow these steps:
+To experience the Stock Price Prediction API, proceed through these steps:
 
-1. Install the necessary packages: `pip install -r requirements.txt`
+1. Begin by installing the requisite packages: `pip install -r requirements.txt`
 
-2. Prepare your historical stock data in CSV format, ensuring it includes columns 'Date', 'Low', 'Open', 'High', 'Close', and 'Adjusted Close'.
+2. Ready your historical stock data in CSV format, making sure to include essential columns such as 'Date', 'Low', 'Open', 'High', 'Close', and 'Adjusted Close'.
 
-3. Train the predictive model by running the script `train_model.py`. This will generate the 'stock_price_prediction_model.pkl' file containing the trained model.
+3. Train the predictive model by executing the `trainModel.py` script. This process will generate the 'stock_price_prediction_model.pkl' file, encapsulating the trained model.
 
-4. Run the API server by executing `server.py`. This will deploy the API, enabling you to send POST requests with input stock data.
+4. Activate the API server by running the `server.py` script. This deployment allows you to issue POST requests with input stock data.
 
-5. Utilize the client script `client.py` to send input data to the API and receive predictions for the number of days from the start date.
+5. Engage the client script `client.py` to transmit input data to the API and obtain predictions for the number of days from the start date.
 
 ## Advanced Usage
 
-For advanced users seeking to enhance the API further, consider:
+For advanced users keen on further enhancing the API's capabilities, consider:
 
-- Tuning hyperparameters of the Gradient Boosting Regressor for optimal performance.
-- Exploring alternative regression techniques to compare and contrast predictive power.
-- Modifying preprocessing steps or exploring additional feature engineering techniques.
+- Fine-tuning hyperparameters of the Gradient Boosting Regressor for optimal performance.
+- Exploring alternate regression techniques to compare and contrast predictive prowess.
+- Customizing preprocessing steps or exploring additional avenues for feature engineering.
+
+--------
+By Akshit Panapuzha
 
 ---
 
-By Akshit Panapuzha
-
+**Note**: Be sure to execute the `trainModel.py` script to generate the 'stock_price_prediction_model.pkl' file before utilizing the API for predictions.
